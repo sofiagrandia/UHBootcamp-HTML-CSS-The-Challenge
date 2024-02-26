@@ -1,0 +1,67 @@
+@import '../core/webfonts';
+span{
+    font-family: larsseit bold;
+}
+
+.intro{
+    background-color: rgb(84, 21, 84);;
+    display: flex;
+    justify-content: center;
+    padding: 10px 70px 10px 70px;
+    gap: 20px;
+
+    &_text{
+        &-titlewhite{
+            font-family: larsseit medium;
+            font-size: 30px;
+            color: white;
+        }
+        &-titleorange{
+            font-family: larsseit medium;
+            font-size: 30px;
+            color: rgb(236,177,47);
+        }
+        &-par{
+            font-family: larsseit regular;
+            color:white;
+            padding: 10px 10px 10px 0px;
+            width: 500px;
+        }
+        &-buttons{
+            display:flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+    &_video{
+        padding: 20px;
+    }
+        
+    }
+
+    .email-button{
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 15px;
+        background-color: white;
+        border-radius: 3px;
+        color: rgb(84, 21, 84);
+        width: 500px;
+        padding: 15px;
+        font-family: larsseit regular;
+    }
+    .google-button{
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 15px;
+        background-color:rgb(66,132,243);
+        border-radius: 3px;
+        color: white;
+        width: 500px;
+        padding: 15px;
+        font-family: larsseit regular;
+    }
+    
+    
+}

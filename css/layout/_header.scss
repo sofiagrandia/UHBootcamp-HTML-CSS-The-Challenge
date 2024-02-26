@@ -1,0 +1,58 @@
+@import '../core/webfonts';
+
+.header {
+  display: flex;
+  background-color: rgb(84, 21, 84);
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  height: 70px;
+  &_img {
+    height: 30px;
+  }
+  &_nav {
+    display: flex;
+    gap: 20px;
+    & li{
+        list-style:none;
+    }
+    &-link {
+      color: white;
+      text-decoration: none;
+      font-family: larsseit regular;
+    }
+  }
+  &_block {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    &-link1 {
+      text-decoration: none;
+      color: white;
+      font-family: larsseit regular;
+    }
+
+    &-link2 {
+      text-decoration: none;
+      color: white;
+      border: 1px solid white;
+      border-radius: 3px;
+      padding: 10px;
+      font-family: larsseit bold;
+      font-size: 13px;
+    }
+
+    &-link3 {
+      text-decoration: none;
+      color: rgb(84, 21, 84);
+      border: 1px solid white;
+      border-radius: 3px;
+      background-color: white;
+      padding: 10px;
+      font-family: larsseit bold;
+      font-size: 13px;
+    }
+  }
+}

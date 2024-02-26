@@ -1,0 +1,65 @@
+@import '../core/webfonts';
+
+
+.about{
+    background-color: rgb(244,237,228) ;
+    &_companylogos{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        gap: 30px;
+
+        &-logo{
+            height: 30px;
+            
+        }
+
+        
+    }
+    
+    &_intro{
+        font-family: larsseit medium;
+        text-transform: uppercase;
+        font-size: 13px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    &_tools{
+        
+        display: flex;
+        padding: 50px 150px 50px 150px;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        gap: 50px;
+        .text-box{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 1500px;
+        }
+        &-title{
+            font-family: larsseit medium;
+            font-size: 30px;
+        }
+        &-par{
+            font-family: larsseit regular;
+            font-size: 15px;
+        }
+        &-link{
+            font-family: larsseit regular;
+            font-size: 15px;
+            text-decoration: none;
+            color: rgb(21,100,163);
+        }
+
+        &-link:hover{
+            text-decoration: underline;
+        }
+
+    }
+
+    
+}

@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "larsseit regular";
+  src: url("../../webfonts/Larsseit.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "larsseit bold";
+  src: url("../../webfonts/Larsseit-Bold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "larsseit medium";
+  src: url("../../webfonts/Larsseit-Medium.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "larsseit light";
+  src: url("../../webfonts/Larsseit-Light.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+.header {
+  display: flex;
+  background-color: rgb(84, 21, 84);
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  height: 70px;
+}
+.header_img {
+  height: 30px;
+}
+.header_nav {
+  display: flex;
+  gap: 20px;
+}
+.header_nav li {
+  list-style: none;
+}
+.header_nav-link {
+  color: white;
+  text-decoration: none;
+  font-family: larsseit regular;
+}
+.header_block {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.header_block-link1 {
+  text-decoration: none;
+  color: white;
+  font-family: larsseit regular;
+}
+.header_block-link2 {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 10px;
+  font-family: larsseit bold;
+  font-size: 13px;
+}
+.header_block-link3 {
+  text-decoration: none;
+  color: rgb(84, 21, 84);
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color: white;
+  padding: 10px;
+  font-family: larsseit bold;
+  font-size: 13px;
+}
+
+@font-face {
+  font-family: "larsseit regular";
+  src: url("../../webfonts/Larsseit.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "larsseit bold";
+  src: url("../../webfonts/Larsseit-Bold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "larsseit medium";
+  src: url("../../webfonts/Larsseit-Medium.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "larsseit light";
+  src: url("../../webfonts/Larsseit-Light.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+span {
+  font-family: larsseit bold;
+}
+
+.intro {
+  background-color: rgb(84, 21, 84);
+  display: flex;
+  justify-content: center;
+  padding: 10px 70px 10px 70px;
+  gap: 20px;
+}
+.intro_text-titlewhite {
+  font-family: larsseit medium;
+  font-size: 30px;
+  color: white;
+}
+.intro_text-titleorange {
+  font-family: larsseit medium;
+  font-size: 30px;
+  color: rgb(236, 177, 47);
+}
+.intro_text-par {
+  font-family: larsseit regular;
+  color: white;
+  padding: 10px 10px 10px 0px;
+  width: 500px;
+}
+.intro_text-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.intro_text_video {
+  padding: 20px;
+}
+.intro .email-button {
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  background-color: white;
+  border-radius: 3px;
+  color: rgb(84, 21, 84);
+  width: 500px;
+  padding: 15px;
+  font-family: larsseit regular;
+}
+.intro .google-button {
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  background-color: rgb(66, 132, 243);
+  border-radius: 3px;
+  color: white;
+  width: 500px;
+  padding: 15px;
+  font-family: larsseit regular;
+}
+
+@font-face {
+  font-family: "larsseit regular";
+  src: url("../../webfonts/Larsseit.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "larsseit bold";
+  src: url("../../webfonts/Larsseit-Bold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "larsseit medium";
+  src: url("../../webfonts/Larsseit-Medium.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "larsseit light";
+  src: url("../../webfonts/Larsseit-Light.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+.about {
+  background-color: rgb(244, 237, 228);
+}
+.about_companylogos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 30px;
+}
+.about_companylogos-logo {
+  height: 30px;
+}
+.about_intro {
+  font-family: larsseit medium;
+  text-transform: uppercase;
+  font-size: 13px;
+  text-align: center;
+  padding: 20px;
+}
+.about_tools {
+  display: flex;
+  padding: 50px 150px 50px 150px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.about_tools .text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 1500px;
+}
+.about_tools-title {
+  font-family: larsseit medium;
+  font-size: 30px;
+}
+.about_tools-par {
+  font-family: larsseit regular;
+  font-size: 15px;
+}
+.about_tools-link {
+  font-family: larsseit regular;
+  font-size: 15px;
+  text-decoration: none;
+  color: rgb(21, 100, 163);
+}
+.about_tools-link:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=main.css.map */
