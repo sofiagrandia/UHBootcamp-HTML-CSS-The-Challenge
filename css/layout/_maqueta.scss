@@ -1,138 +1,124 @@
-
-*{
-    font-family: larsseit regular;
+* {
+  font-family: larsseit regular;
 }
-.maqueta{
-    height: 600px;
-    
+.maqueta {
+  height: 600px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(245, 238, 228);
+}
+img {
+  height: 30px;
+}
+
+.box {
+  height: 400px;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+
+  &_superior {
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 10px 10px 0px 0px;
+
+    &-botones {
+      padding: 3px;
+      display: flex;
+      gap: 3px;
+    }
+  }
+
+  &_inferior {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(245, 238, 228);
-   
-}
-img{
-    height: 30px;
-}
+    justify-content: space-around;
+    height: 200px;
 
-.box{
-   
-    height: 400px;
-    width: 50vw;
-    display:flex;
-    flex-direction: column;
-    
-    &_superior{
-        background-color: black;
-        border: 1px solid black;
-        border-radius: 10px 10px 0px 0px;
+    &-izquierdo {
+      display: flex;
+      flex-direction: column;
 
-        &-botones{
-            padding: 3px;
-            display: flex;
-            gap: 3px;
-        }
+      background-color: rgb(68, 27, 73);
+      border: 1px solid rgb(68, 27, 73);
+      border-radius: 0px 0px 0px 10px;
+      width: 30%;
+      font-style: larsseit regular;
     }
 
-    &_inferior{
-        display: flex;
-        justify-content: space-around;
-        height: 200px;
-
-        &-izquierdo{
-            display: flex;
-            flex-direction: column;
-        
-            background-color: rgb(68,27,73);
-            border: 1px solid rgb(68,27,73);
-            border-radius: 0px 0px 0px 10px;
-            width: 30%;
-            font-style: larsseit regular;
-            
-        }
-
-        &-derecho{
-            background-color: whitesmoke;
-            width: 70%;
-            border: 1px solid whitesmoke;
-            border-radius: 0px 0px 10px 0px;
-            padding: 20px;
-            
-        }
+    &-derecho {
+      background-color: whitesmoke;
+      width: 70%;
+      border: 1px solid whitesmoke;
+      border-radius: 0px 0px 10px 0px;
+      padding: 20px;
     }
-
+  }
 }
 
-.texto-blanco{
-    color: white;
+.texto-blanco {
+  color: white;
 }
 
-
-.rojo{
-    height: 12px;
-    width: 12px;
-    border-radius: 20px;
-    background-color: rgb(197, 57, 39);
+.rojo {
+  height: 12px;
+  width: 12px;
+  border-radius: 20px;
+  background-color: rgb(197, 57, 39);
 }
-.amarillo{
-    height: 12px;
-    width: 12px;
-    border-radius: 20px;
-    background-color: rgb(218, 179, 71);
+.amarillo {
+  height: 12px;
+  width: 12px;
+  border-radius: 20px;
+  background-color: rgb(218, 179, 71);
 }
-.verde{
-    height: 12px;
-    width: 12px;
-    border-radius: 20px;
-    background-color: rgb(39, 197, 68);
-}
-
-
-
-
-
-.primero{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    gap:30px;
-    padding-top: 20px;
+.verde {
+  height: 12px;
+  width: 12px;
+  border-radius: 20px;
+  background-color: rgb(39, 197, 68);
 }
 
-.proyecto{
-    background-color: rgb(45,99,157);
+.primero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  gap: 30px;
+  padding-top: 20px;
+}
+
+.proyecto {
+  
+    background-color: rgb(45, 99, 157);
     text-align: right;
     padding: 5px;
-    
+  }
+
+.canales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
 }
-.canales{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    
-}
 
-
-
-
-.titulo{
-    display: none;
-    @media all and (min-width: 768px) {
+.titulo {
+  display: none;
+  @media all and (min-width: 850px) {
     display: flex;
     justify-content: space-between;
-    }
+  }
 }
 
-.comentario{
-    display: none;
+.comentario {
+  display: none;
 
-    @media all and (min-width: 768px) {
+  @media all and (min-width: 850px) {
     display: flex;
     gap: 10px;
     padding: 10px;
-    }
+  }
 }
