@@ -1,0 +1,27 @@
+.footer{
+    background-color:$color_bg;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    gap: 10px;
+    color: white;
+    @media all and (min-width: 768px) {
+        flex-direction: row;
+        gap: 100px;
+      }
+}
+li{
+
+    list-style: none;
+    font-size: 12px;
+    padding: 10px;
+}
+
+ul{
+    display: none;
+    @media all and (min-width: 768px) {
+        display: block;
+    }
+}
+

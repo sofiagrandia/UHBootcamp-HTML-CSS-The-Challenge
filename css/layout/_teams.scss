@@ -1,0 +1,268 @@
+.teams {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 100px;
+  padding: 100px 150px 100px 150px;
+  position: relative;
+  &_candado {
+    display: none;
+  }
+  &_ordenador {
+    display: none;
+  }
+
+  &_grafico {
+    display: none;
+  }
+
+  &_edificio {
+    display: none;
+  }
+
+  &_manos {
+    display: none;
+  }
+
+  &_ciudad {
+    display: none;
+  }
+  @media all and (min-width: 1000px) {
+    &_candado {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      background-color: rgb(249, 249, 249);
+      padding: 5px 15px 5px 15px;
+      border: 1px solid rgb(249, 249, 249);
+      border-radius: 20%;
+      gap: 10px;
+      box-shadow: 0px 2px 5px rgb(222, 222, 222);
+      & p {
+        font-family: larsseit light;
+      }
+      &-img {
+        height: 20px;
+      }
+
+      position: absolute;
+      left: 250px;
+      top: 300px;
+    }
+
+    &_ordenador {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      background-color: rgb(249, 249, 249);
+      padding: 5px 15px 5px 15px;
+      border: 1px solid rgb(249, 249, 249);
+      border-radius: 20%;
+      gap: 10px;
+      box-shadow: 0px 2px 5px rgb(222, 222, 222);
+      & p {
+        font-family: larsseit light;
+      }
+      &-img {
+        height: 20px;
+      }
+
+      position: absolute;
+      right: 150px;
+      top: 300px;
+    }
+
+    &_grafico {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      background-color: rgb(249, 249, 249);
+      padding: 5px 15px 5px 15px;
+      border: 1px solid rgb(249, 249, 249);
+      border-radius: 20%;
+      gap: 10px;
+      box-shadow: 0px 2px 5px rgb(222, 222, 222);
+      & p {
+        font-family: larsseit light;
+      }
+      &-img {
+        height: 20px;
+      }
+
+      position: absolute;
+      left: 100px;
+      top: 150px;
+    }
+
+    &_edificio {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      background-color: rgb(249, 249, 249);
+      padding: 5px 15px 5px 15px;
+      border: 1px solid rgb(249, 249, 249);
+      border-radius: 20%;
+      gap: 10px;
+      box-shadow: 0px 2px 5px rgb(222, 222, 222);
+      & p {
+        font-family: larsseit light;
+      }
+      &-img {
+        height: 20px;
+      }
+
+      position: absolute;
+      left: 180px;
+      top: 60px;
+    }
+
+    &_manos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      background-color: rgb(249, 249, 249);
+      padding: 5px 15px 5px 15px;
+      border: 1px solid rgb(249, 249, 249);
+      border-radius: 20%;
+      gap: 10px;
+      box-shadow: 0px 2px 5px rgb(222, 222, 222);
+      & p {
+        font-family: larsseit light;
+      }
+      &-img {
+        height: 20px;
+      }
+
+      position: absolute;
+      right: 190px;
+      top: 200px;
+    }
+
+    &_ciudad {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      background-color: rgb(249, 249, 249);
+      padding: 5px 15px 5px 15px;
+      border: 1px solid rgb(249, 249, 249);
+      border-radius: 20%;
+      gap: 10px;
+      box-shadow: 0px 2px 5px rgb(222, 222, 222);
+      & p {
+        font-family: larsseit light;
+      }
+      &-img {
+        height: 20px;
+      }
+
+      position: absolute;
+      right: 100px;
+      top: 80px;
+    }
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 70px;
+  }
+  &_title {
+    text-align: center;
+    font-family: larsseit medium;
+    font-size: 50px;
+  }
+
+  &_par {
+    font-family: larsseit regular;
+    text-align: center;
+    font-size: 17px;
+    width: 70%;
+  }
+  &_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    @media all and (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+  .aboutSlack {
+    text-align: center;
+    font-family: larsseit medium;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: $color_bg;
+    border: 1px solid $color_bg;
+    border-radius: 5px;
+    color: white;
+    width: 90vw;
+    padding: 20px 50px 20px 50px;
+    @media all and (min-width: 768px) {
+      width: auto;
+    }
+  }
+  .sales {
+    text-align: center;
+    font-family: larsseit medium;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: white;
+    border: 1px solid $color_bg;
+    border-radius: 5px;
+    color: $color_bg;
+    width: 90vw;
+    padding: 20px 50px 20px 50px;
+    @media all and (min-width: 768px) {
+      width: auto;
+    }
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media all and (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  &_article {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    @media all and (min-width: 768px) {
+      flex-direction: row;
+    }
+    &-title {
+      font-family: larsseit bold;
+      font-size: 55px;
+      color: $color_bg;
+    }
+    &-par {
+      font-family: larsseit regular;
+      width: 60%;
+      text-align: center;
+      margin: 5px;
+      @media all and (min-width: 768px) {
+        text-align: left;
+      }
+    }
+  }
+}

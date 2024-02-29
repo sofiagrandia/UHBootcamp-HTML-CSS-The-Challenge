@@ -1,0 +1,60 @@
+@mixin displayRowCenter ($gap){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: $gap;
+}
+
+@mixin displayRowCenterWrap ($gap){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: $gap;
+}
+
+@mixin displayColCenter ($gap){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: $gap;
+}
+
+@mixin displayColStart ($gap){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    align-content: center;
+    gap: $gap;
+}
+
+@mixin displayColEnd ($gap){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    align-content: center;
+    gap: $gap;
+}
+
+
+
+@mixin displayRowAround ($gap){
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    align-content: center;
+    gap: $gap;
+}
+@mixin displayRowBetween ($gap){
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    align-content: center;
+    gap: $gap;
+}

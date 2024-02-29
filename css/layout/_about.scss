@@ -1,65 +1,140 @@
-@import '../core/webfonts';
+.about {
+   
+  background-color: rgb(245, 238, 228);
+  padding-top: 100px;
+    padding-bottom: 100px;
+  &_companylogos {
+    @include displayRowCenterWrap(30px);
 
-
-.about{
-    background-color: rgb(244,237,228) ;
-    &_companylogos{
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-        gap: 30px;
-
-        &-logo{
-            height: 30px;
-            
-        }
-
-        
+    &-logo {
+      height: 30px;
     }
+  }
+
+  &_intro {
+    font-family: larsseit medium;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  &_tools {
     
-    &_intro{
-        font-family: larsseit medium;
-        text-transform: uppercase;
-        font-size: 13px;
-        text-align: center;
-        padding: 20px;
+    
+    @include displayColStart(70px);
+
+
+    @media all and (min-width: 768px) {
+      flex-direction: row;
+      align-items: center;
     }
 
-    &_tools{
-        
-        display: flex;
-        padding: 50px 150px 50px 150px;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        gap: 50px;
-        .text-box{
+    padding-top: 100px;
+
+    & div{
+        display: block;
+    }
+    &-video{
+        display: none;
+        @media all and (min-width: 768px) {
             display: flex;
-            flex-direction: column;
-            gap: 10px;
-            width: 1500px;
-        }
-        &-title{
-            font-family: larsseit medium;
-            font-size: 30px;
-        }
-        &-par{
-            font-family: larsseit regular;
-            font-size: 15px;
-        }
-        &-link{
-            font-family: larsseit regular;
-            font-size: 15px;
-            text-decoration: none;
-            color: rgb(21,100,163);
-        }
+          }
+    }
+    &-img{
+        left: 0;
+        width: 100%;
+        height: auto;
+        padding: 0;
 
-        &-link:hover{
-            text-decoration: underline;
-        }
-
+        @media all and (min-width: 768px) {
+            display: none;
+          }
     }
 
-    
+    .text-box {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding:20px;
+      width: 70vw;
+      @media all and (min-width: 768px) {
+        width: 450px;
+      }
+    }
+    &-title {
+      font-family: larsseit medium;
+      font-size: 30px;
+    }
+    &-par {
+      font-family: larsseit regular;
+      font-size: 15px;
+    }
+    &-link {
+      font-family: larsseit regular;
+      font-size: 15px;
+      text-decoration: none;
+      color: rgb(21, 100, 163);
+    }
+
+    &-link:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &_toolsReverse {
+    @include displayColEnd(70px);
+
+    @media all and (min-width: 768px) {
+      flex-direction: row-reverse;
+    }
+    &-video{
+        display: none;
+        @media all and (min-width: 768px) {
+            display: flex;
+          }
+    }
+    &-img{
+        left: 0;
+        width: 100%;
+        height: auto;
+        padding: 0;
+
+        @media all and (min-width: 768px) {
+            display: none;
+          }
+    }
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .text-box {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 70vw;
+      @media all and (min-width: 768px) {
+        width: 450px;
+      }
+      padding: 20px;
+    }
+    &-title {
+      font-family: larsseit medium;
+      font-size: 30px;
+    }
+    &-par {
+      font-family: larsseit regular;
+      font-size: 15px;
+    }
+    &-link {
+      font-family: larsseit regular;
+      font-size: 15px;
+      text-decoration: none;
+      color: rgb(21, 100, 163);
+    }
+
+    &-link:hover {
+      text-decoration: underline;
+    }
+  }
 }

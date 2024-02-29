@@ -1,7 +1,13 @@
 @import 'core/reset';
+@import 'core/webfonts';
+@import 'core/mixins';
+@import 'core/vars';
 @import 'layout/header';
 @import 'layout/intro';
 @import 'layout/about';
+@import 'layout/teams';
+@import 'layout/maqueta';
+@import 'layout/footer';
 
 
 //rgb(84,21,84)
