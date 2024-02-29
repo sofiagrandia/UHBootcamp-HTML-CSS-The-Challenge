@@ -727,6 +727,17 @@ img {
   text-align: right;
   padding: 5px;
 }
+.proyecto .ordenador {
+  display: none;
+}
+@media all and (min-width: 850px) {
+  .proyecto .ordenador {
+    display: block;
+  }
+  .proyecto .movil {
+    display: none;
+  }
+}
 
 .canales {
   display: flex;

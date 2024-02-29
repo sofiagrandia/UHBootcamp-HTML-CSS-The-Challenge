@@ -96,6 +96,18 @@ img {
     background-color: rgb(45, 99, 157);
     text-align: right;
     padding: 5px;
+    .ordenador{
+        display: none;
+    }
+
+    @media all and (min-width: 850px) {
+        .ordenador{
+            display: block;
+        }
+        .movil{
+            display: none;
+        }
+    }
   }
 
 .canales {
