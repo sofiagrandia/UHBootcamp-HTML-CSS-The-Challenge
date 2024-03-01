@@ -34,11 +34,12 @@
   align-items: center;
   align-content: center;
   gap: 30px;
-  padding: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
   position: fixed;
   width: 100%;
   background-color: rgb(84, 21, 84);
-  height: 70px;
+  height: 80px;
   z-index: 1000;
 }
 @media all and (min-width: 768px) {
@@ -96,7 +97,7 @@
     color: white;
     border: 1px solid white;
     border-radius: 3px;
-    padding: 10px;
+    padding: 15px;
     font-family: larsseit bold;
     font-size: 13px;
   }
@@ -106,7 +107,7 @@
     border: 1px solid white;
     border-radius: 3px;
     background-color: white;
-    padding: 10px;
+    padding: 15px;
     font-family: larsseit bold;
     font-size: 13px;
   }
@@ -120,10 +121,10 @@ span {
   background-color: rgb(84, 21, 84);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 100px 70px 0px 70px;
-  gap: 20px;
+  padding-top: 100px;
+  gap: 10px;
 }
 @media all and (min-width: 768px) {
   .intro {
@@ -132,14 +133,15 @@ span {
   }
 }
 .intro_text {
-  padding: 20px;
+  padding: 10px;
+  text-align: center;
 }
 @media all and (min-width: 768px) {
   .intro_text {
     text-align: left;
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 550px;
   }
 }
 .intro_text-titlewhite {
@@ -150,6 +152,7 @@ span {
 @media all and (min-width: 768px) {
   .intro_text-titlewhite {
     width: 100%;
+    font-size: 40px;
   }
 }
 .intro_text-titleorange {
@@ -160,6 +163,7 @@ span {
 @media all and (min-width: 768px) {
   .intro_text-titleorange {
     width: 100%;
+    font-size: 40px;
   }
 }
 .intro_text-par {
@@ -186,7 +190,7 @@ span {
 }
 @media all and (min-width: 768px) {
   .intro_video-size {
-    width: 50vw;
+    width: 40vw;
   }
 }
 .intro .email-button {
@@ -197,7 +201,7 @@ span {
   background-color: white;
   border-radius: 3px;
   color: rgb(84, 21, 84);
-  padding: 15px;
+  padding: 12px;
   font-family: larsseit regular;
   width: 100%;
 }

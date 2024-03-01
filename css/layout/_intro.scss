@@ -6,10 +6,10 @@ span {
   background-color: $color_bg;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 100px 70px 0px 70px;
-  gap: 20px;
+  padding-top: 100px;
+  gap: 10px;
 
   @media all and (min-width: 768px) {
     flex-direction: row;
@@ -17,13 +17,13 @@ span {
   }
 
   &_text {
-    padding: 20px;
-
+    padding: 10px;
+    text-align: center;
     @media all and (min-width: 768px) {
       text-align: left;
       display: flex;
       flex-direction: column;
-      width: 500px;
+      width: 550px;
     }
     &-titlewhite {
       font-family: larsseit medium;
@@ -31,6 +31,7 @@ span {
       color: white;
       @media all and (min-width: 768px) {
         width: 100%;
+        font-size: 40px;
       }
     }
     &-titleorange {
@@ -39,6 +40,7 @@ span {
       color: rgb(236, 177, 47);
       @media all and (min-width: 768px) {
         width: 100%;
+        font-size: 40px;
       }
     }
     &-par {
@@ -63,7 +65,7 @@ span {
          width:80vw;
          height: fit-content;
          @media all and (min-width: 768px) {
-            width:50vw;
+            width:40vw;
          }
        
   }}
@@ -76,7 +78,7 @@ span {
     border-radius: 3px;
     color: rgb(84, 21, 84);
     
-    padding: 15px;
+    padding: 12px;
     font-family: larsseit regular;
 
     width: 100%;
