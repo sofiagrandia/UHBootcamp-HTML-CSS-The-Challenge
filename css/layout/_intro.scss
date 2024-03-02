@@ -85,14 +85,30 @@ span {
   }
   .google-button {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 15px;
     background-color: rgb(66, 132, 243);
     border-radius: 3px;
     color: white;
-    padding: 15px;
+    padding: 8px;
     font-family: larsseit regular;
     width: 100%;
+  }
+
+  .googleLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
   }
 }
